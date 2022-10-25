@@ -62,48 +62,48 @@ $grays: (
 }
 
 :root {
-  --aims-clr-light: #ffffff;
-  --aims-clr-dark: rgb(24, 74, 124);
-  --aims-clr-primary: rgb(24, 74, 124);
-  --aims-clr-secondary: #007bff69;
-  --aims-clr-accent: #ff7750;
-  --aims-sec-clr-accent: #00b5ad;
-  --aims-clr-font: #000000;
-  --aims-clr-font-surface: var(--aims-clr-light);
-  --aims-clr-font-light: var(--aims-clr-primary);
+  --master-clr-light: #ffffff;
+  --master-clr-dark: rgb(24, 74, 124);
+  --master-clr-primary: rgb(24, 74, 124);
+  --master-clr-secondary: #007bff69;
+  --master-clr-accent: #ff7750;
+  --master-sec-clr-accent: #00b5ad;
+  --master-clr-font: #000000;
+  --master-clr-font-surface: var(--master-clr-light);
+  --master-clr-font-light: var(--master-clr-primary);
 
-  --aims-fs-nomral: 14px;
-  --aims-seite-direction: ltr;
+  --master-fs-nomral: 14px;
+  --master-seite-direction: ltr;
 
-  --aims-foreground: var(--aims-clr-light);
-  --aims-background: var(--aims-clr-light);
-  --aims-surface-background: var(--aims-clr-primary);
-  --aims-elementsbackground: var(--aims-clr-primary);
-  --aims-on-surface: #b6daff57;
+  --master-foreground: var(--master-clr-light);
+  --master-background: var(--master-clr-light);
+  --master-surface-background: var(--master-clr-primary);
+  --master-elementsbackground: var(--master-clr-primary);
+  --master-on-surface: #b6daff57;
 
-  --aims-line-clr: #00000020;
-  //--aims-surface-background: var(--aims-clr-light);
+  --master-line-clr: #00000020;
+  //--master-surface-background: var(--master-clr-light);
 }
 
 .darkmode {
-  --aims-clr-light: #f8f8f8;
-  --aims-clr-dark: #262626;
+  --master-clr-light: #f8f8f8;
+  --master-clr-dark: #262626;
 
-  --aims-fs-nomral: 14px;
-  --aims-clr-primary: #2e2f30;
-  --aims-clr-secondary: #5f7281;
-  --aims-clr-accent: #ff7750;
-  --aims-clr-font: #ffffff;
-  --aims-clr-font-surface: var(--aims-clr-dark);
-  --aims-clr-font-light: #f8f8f8;
+  --master-fs-nomral: 14px;
+  --master-clr-primary: #2e2f30;
+  --master-clr-secondary: #5f7281;
+  --master-clr-accent: #ff7750;
+  --master-clr-font: #ffffff;
+  --master-clr-font-surface: var(--master-clr-dark);
+  --master-clr-font-light: #f8f8f8;
 
-  --aims-foreground: var(--aims-clr-light);
-  --aims-background: var(--aims-clr-dark);
-  --aims-surface-background: var(--aims-clr-primary);
-  --aims-on-surface: #393b3c;
-  --aims-elementsbackground: var(--aims-clr-primary);
+  --master-foreground: var(--master-clr-light);
+  --master-background: var(--master-clr-dark);
+  --master-surface-background: var(--master-clr-primary);
+  --master-on-surface: #393b3c;
+  --master-elementsbackground: var(--master-clr-primary);
 
-  --aims-line-clr: #2e2f30;
+  --master-line-clr: #2e2f30;
 }
 
 .secondaryHover:hover, .secondaryHover:focus{
@@ -132,128 +132,3 @@ $grays: (
   height: 50vh;
 }
 
-
-//Animation
-@keyframes zahn {
-  0% {
-    transform: rotateZ(0deg);
-  }
-
-  100% {
-    transform: rotateZ(360deg);
-  }
-
-}
-
-
-#logoZahn {
-  animation: zahn 5s infinite linear;
-  transform-origin: center;
-  animation-timing-function: ease-in-out;
-}
-
-.bubbleContainer {
-  justify-content: space-around;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  animation-name: bubblesIn;
-  animation-duration: 40s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
-}
-
-
-@keyframes bubblesIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@for $i from 1 through 50 {
-  $size: random(50)+1+px;
-
-  .bubbleX#{$i} {
-    display: inline-block;
-    width: $size;
-    height: $size;
-    border-radius: 0;
-    background-color: rgba(255, 255, 255, 0.257);
-    transform: translateX(0);
-    animation-name: bubbleX#{$i};
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    position: relative;
-  }
-
-  .bubbleY#{$i} {
-    //z-index: 5000;
-    //margin-top: random(200) + px;
-    left: random(156) + px;
-    animation-name: bubbleY;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transform: translateY(0);
-    opacity: .6;
-    animation-delay: random(15) + s;
-    position: relative;
-    height: 100%;
-  }
-
-  .bubbleY#{$i}:hover:after {
-    font-family: "FontAwesome" !important;
-    content: "\f132";
-    color: var(--aims-clr-primary) !important;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    font-size: 100% !important;
-    //background-color: var(--aims-clr-secondary);
-    transition: 1s;
-    animation-timing-function: ease-in-out;
-  }
-
-  @keyframes bubbleX#{$i} {
-    0% {
-      transform: translateX(0);
-    }
-
-    20% {
-      transform: translateX(-random(15) + px)
-    }
-
-    40% {
-      transform: translateX(random(15) + px)
-    }
-
-    60% {
-      transform: translateX(-random(15) + px)
-    }
-
-    80% {
-      transform: translateX(random(15) + px)
-    }
-
-    100% {
-      transform: translateX(-random(15) + px);
-    }
-  }
-
-  @keyframes bubbleY {
-    0% {
-      transform: translateY(0);
-    }
-
-
-    100% {
-      transform: translateY(-100vh);
-      opacity: 0;
-    }
-  }
-}
