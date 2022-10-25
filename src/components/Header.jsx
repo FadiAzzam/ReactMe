@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <header className="App-header">
             <div className='container'>
-                <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+                <nav className="navbar navbar-expand-lg navbar-dark bg-primary ">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
                             <span className="me-2">
@@ -32,12 +32,6 @@ const Header = () => {
                         </div>
                     </div>
                 </nav>
-                <div className='row'>
-                    <div className="col-md-12 landingPageHeader">
-                        <div className='d-flex justify-content-center align-items-center h-100 w-100'>
-                        </div>
-                    </div>
-                </div>
             </div>
         </header>
     )
