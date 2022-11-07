@@ -1,28 +1,20 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Link } from "react-router-dom";
+import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 
 const Header = () => {
     return (
         <header className="header-image" id="header">
           <div className="container h-100">
-            <nav className="m-2 navbar navbar-expand-lg navbar-dark">
-              <a className="navbar-brand mb-0 h1" href="#"><h1 style={{fontVariant: "small-caps"}}>Fadi Azzam</h1></a>
+            <nav className="m-2 navbar navbar-expand-lg navbar-custom">
+              <a className="navbar-brand ps-1 pe-1 hoverBox" href="/"><h2>fadiazzam.de</h2></a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse me-auto" id="navbarNav">
                 <ul className="navbar-nav ms-auto text-right">
-                  <li className="nav-item m-2 d-flex">
-                    <a className="nav-link " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img className="icon-hover" src="Images/germany.png" width="30px" alt=""/>
-                    </a>
-                    <div className="collapse" id="collapseExample">
-                      <a href="./index_ar.html" className="nav-link">
-                        <img className="icon-hover" src="Images/syria.png" width="30px" alt=""/>
-                      </a>
-                    </div>
-                  </li>
   
                   {/* <a className="nav-link " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <img src="/Images/germany.png" width="30px" alt="">
@@ -40,12 +32,12 @@ const Header = () => {
   
                 
   
-                  <li className="nav-item m-2">
-                      <a className="nav-link" href="#header">Home</a>
+                  {/* <li className="nav-item m-2">
+                      <a className="nav-link" href="/">Home</a>
                   </li>
                   
                   <li className="nav-item m-2">
-                      <a className="nav-link" href="#about">About</a>
+                      <a className="nav-link" href="about">About</a>
                   </li>
                   
                   <li className="nav-item m-2">
@@ -58,17 +50,17 @@ const Header = () => {
                   
                   <li className="nav-item m-2">
                     <a className="nav-link" href="#leben">Lebenslauf</a>
-                  </li>
+                  </li> */}
   
                   <li className="nav-item m-2">
-                    <a className="nav-link" href="#contact">Contact</a>
+                    <a className="nav-link" href="/contact">Contact</a>
                   </li>
                 </ul>  
               </div>
             </nav>
             <div className="row h-100 align-items-center">
               <div className="col-1 text-left">
-                <nav className="navbar navbar-dark pt-0">
+                <nav className="navbar navbar-dark pt-0 navbar-custom">
                   <ul className="navbar-nav text-left">
                     {/*
                     <li className="nav-item">
@@ -79,23 +71,30 @@ const Header = () => {
                     </li>
                     */}
                     <li className="nav-item">
-                      <a className="nav-link" target="_blank" href="https://github.com/FadiAzzam"><i className="fab fa-github"></i></a>
+                      <a className="nav-link" target="_blank" rel="noreferrer" href="https://github.com/FadiAzzam">
+                        <FaGithub />
+                      </a>  
                     </li>
   
                     <li className="nav-item">
-                      <a className="nav-link" target="_blank" href="https://www.instagram.com/fadiology_/"><i className="fab fa-instagram"></i></a>
+                      <a className="nav-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/fadiology_/">
+                        <FaInstagram />
+                      </a>
                     </li>
   
                     <li className="nav-item">
-                      <a className="nav-link" target="_blank" href="https://www.linkedin.com/in/fadi-azzam-274902196/"><i className="fab fa-linkedin"></i></a>
+                      <a className="nav-link" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/fadi-azzam-274902196/">
+                        <FaLinkedin />
+                      </a>
                     </li>
                   </ul>
                 </nav>
               </div>
               
               <div className="col-11">
-                <h1 id="HelloTag" className="coverText text-center socialMedia position-relative">مرحبآ</h1>
-                <p className="lead text-center">This is Fadi.</p>
+                <div className='d-flex'>
+                  <h3 className="lead text-center typingEffect">This is Fadi</h3>
+                </div>
               </div>
             </div>
           </div>

@@ -6,10 +6,6 @@ import Projects from './Projects';
 import WorkExperience from './WorkExperience'
 import Education from './Education';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-
-//import Pics
 
 const LandingPage = () => {
 	return (
