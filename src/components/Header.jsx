@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header-image" id="header">
-      <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
       <div className="container">
         <nav className="m-2 navbar navbar-expand-lg navbar-custom">

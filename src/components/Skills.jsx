@@ -70,10 +70,9 @@ const SkillsInProgress = [
 
 const Skills = () => {
 	return (
-		<div className="container">
+		<div className="">
 			<div className="row">
-				<div className="col-md-1 p-1" />
-				<div className="col-md-10 p-1">
+				<div className="col-md-12 p-1">
 					<div>
 						<div className="d-flex mb-2">
 							<div className="subTitleBox">

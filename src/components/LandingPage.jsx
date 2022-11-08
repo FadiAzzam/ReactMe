@@ -12,7 +12,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 const LandingPage = () => {
 	return (
 		<div className="container">
-			<div className="container h-100">
+			<div className="">
 				<div className="row h-100 align-items-center">
 					<div className="col-1 text-left">
 						<nav className="navbar navbar-dark pt-0 navbar-custom">
@@ -24,7 +24,7 @@ const LandingPage = () => {
 								</li>
 
 								<li className="nav-item">
-									<a className="nav-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/fadiology_/">
+									<a className="nav-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/fadi.azzam_/">
 										<FaInstagram />
 									</a>
 								</li>

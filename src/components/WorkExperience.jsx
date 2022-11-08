@@ -35,7 +35,7 @@ const workExperience = [
 
 const WorkExperience = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className='row'>
         <div className="col-md-1 p-1" />
         <div className="col-md-10 p-1">

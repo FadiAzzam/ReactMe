@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Impressum() {
     return (
-        <div className="container">
+        <div className="">
             <div className="card">
                 <div className="card-header">
                     Impressum

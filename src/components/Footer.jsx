@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="row my-5">
                     <div className="col-12">
                         <nav className="m-2 navbar navbar-expand-lg navbar-custom subTitleBox">
-                            <ul className="navbar-nav ms-auto text-right">
+                            <ul className="navbar-nav ms-auto text-right flex-row">
                                 <li className="nav-item m-2">
                                     <Link className="nav-link" to="/">
                                         fadiazzam.de

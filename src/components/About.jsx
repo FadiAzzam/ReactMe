@@ -2,10 +2,9 @@ import React from 'react';
 
 const About = () => {
 	return (
-		<div className="container">
+		<div className="">
 			<div className="row">
-				<div className="col-md-1 p-1" />
-				<div className="col-md-10 p-1">
+				<div className="col-md-12 p-1">
 					<div>
 						<div className="d-flex mb-2">
 							<div className="subTitleBox">
@@ -18,7 +17,7 @@ const About = () => {
 					<article>
 						<section className="p-3 d-inline-block">
 							<div className="row align-items-center">
-								<div className="col-md-6">
+								<div className="col-md-6 col-sm-12 d-flex justify-content-center p-3">
 									<div className="avatar" />
 								</div>
 								<div className="col-md-6">
@@ -55,7 +54,6 @@ const About = () => {
 						</section>
 					</article>
 				</div>
-				<div className="col-md-1 p-1" />
 			</div>
 		</div>
 	);
