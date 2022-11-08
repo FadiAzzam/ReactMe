@@ -35,50 +35,46 @@ const workExperience = [
 
 const WorkExperience = () => {
   return (
-    <div className="">
-      <div className='row'>
-        <div className="col-md-1 p-1" />
-        <div className="col-md-10 p-1">
-          <div>
-            <div className="d-flex mb-2">
-              <div className="subTitleBox">
-                <span className="pl-1 pr-1">Berufserfahrung</span>
-              </div>
+    <div>
+      <div className="col-md-12">
+        <div>
+          <div className="d-flex mb-2">
+            <div className="subTitleBox">
+              <span className="pl-1 pr-1">Berufserfahrung</span>
             </div>
-            <h1 className="font-weight-bold ">
-              Praxiserfahrung während der Studienzeit und nach dem Studium
-            </h1>
           </div>
-          <article>
+          <h1 className="font-weight-bold ">
+            Praxiserfahrung während der Studienzeit und nach dem Studium
+          </h1>
+        </div>
+        <article>
 
-            <div className='timeLineContainer'>
-              <div className='timeLine'>
-                <div>
-                  {workExperience.map((item, i) => {
-                    return <section key={i} className="year">
-                      <div className='leftSide'>
-                        <h6>{item.date[0].end}</h6>
-                        <h6>{item.date[0].start}</h6>
-                      </div>
-                      <section>
-                        <h4 className='text-info'>{item.title}</h4>
-                        <h5>{item.company}</h5>
-                        <p>{item.description}</p>
-                        <ul>
-                          {item.tasks.length > 0 && <li><strong>Aufgabenbereiche</strong></li>}
-                          {item.tasks.map(task => {
-                            return <li key={task}>{task}</li>
-                          })}
-                        </ul>
-                      </section>
+          <div className='timeLineContainer'>
+            <div className='timeLine'>
+              <div>
+                {workExperience.map((item, i) => {
+                  return <section key={i} className="year">
+                    <div className='leftSide'>
+                      <h6>{item.date[0].end}</h6>
+                      <h6>{item.date[0].start}</h6>
+                    </div>
+                    <section>
+                      <h4 className='text-info'>{item.title}</h4>
+                      <h5>{item.company}</h5>
+                      <p>{item.description}</p>
+                      <ul>
+                        {item.tasks.length > 0 && <li><strong>Aufgabenbereiche</strong></li>}
+                        {item.tasks.map(task => {
+                          return <li key={task}>{task}</li>
+                        })}
+                      </ul>
                     </section>
-                  })}
-                </div>
+                  </section>
+                })}
               </div>
             </div>
-          </article>
-        </div>
-
+          </div>
+        </article>
       </div>
     </div>
   )

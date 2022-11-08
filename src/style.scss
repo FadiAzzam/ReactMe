@@ -214,13 +214,15 @@ article{
 
 .MosaicLayout{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
   grid-gap: 1rem;
 }
 
 .card {
   padding: 10px 0px;
-  box-shadow: 2px 2px 0px 0px var(--master-clr-accent);
+  border-width: 0 2px 2px 0;
+  border-color: var(--master-clr-accent);
+  //box-shadow: 2px 2px 0px 0px var(--master-clr-accent);
   
   // background: linear-gradient(
   //   40deg,
@@ -233,7 +235,7 @@ article{
   background: rgb(0 0 0 / 25%);
   backdrop-filter: blur(7px);
   border-radius: 10px;
-  border: 1.5px solid rgba(255, 255, 255, 0.08);
+  //border: 1.5px solid rgba(255, 255, 255, 0.08);
   z-index: 1;
   color: #c5c5c5;
 }

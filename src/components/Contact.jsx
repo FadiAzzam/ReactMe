@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div className="">
-      <div className="card p-1">
+      <div className="card">
         <div className="card-header">
           Contact
           <hr />
@@ -20,7 +20,6 @@ const Contact = () => {
           </address>
         </div>
       </div>
-
     </div>
   )
 }

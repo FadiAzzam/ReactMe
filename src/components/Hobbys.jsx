@@ -16,46 +16,44 @@ const myHobbys = [
 
 const Hobbys = () => {
     return (
-        <div className="">
-            <div className='row'>
-                <div className="col-md-12 p-1">
-                    <div>
-                        <div className="d-flex mb-2">
-                            <div className="subTitleBox">
-                                <span className="pl-1 pr-1">Interessen</span>
-                            </div>
+        <div>
+            <div className="col-md-12">
+                <div>
+                    <div className="d-flex mb-2">
+                        <div className="subTitleBox">
+                            <span className="pl-1 pr-1">Interessen</span>
                         </div>
-                        <h1 className="font-weight-bold ">
-                            Interessen und Hobbys
-                        </h1>
                     </div>
-                    <article>
+                    <h1 className="font-weight-bold ">
+                        Interessen und Hobbys
+                    </h1>
+                </div>
+                <article>
 
-                        <div className='timeLineContainer'>
-                            <div className='timeLine'>
-                                <div>
-                                    {myHobbys.map(item => {
-                                        return <section key={item.title} className="year">
-                                            <div className='leftSide'>
-                                                <h6>{item.date[0].end}</h6>
-                                                <h6>{item.date[0].start}</h6>
-                                            </div>
-                                            <section>
-                                                <h4 className='text-info'>{item.title}</h4>
-                                                <h5>{item.company}</h5>
-                                                <p>{item.description}</p>
-                                                <p className='text-success'>{item.location}</p>
-                                            </section>
+                    <div className='timeLineContainer'>
+                        <div className='timeLine'>
+                            <div>
+                                {myHobbys.map(item => {
+                                    return <section key={item.title} className="year">
+                                        <div className='leftSide'>
+                                            <h6>{item.date[0].end}</h6>
+                                            <h6>{item.date[0].start}</h6>
+                                        </div>
+                                        <section>
+                                            <h4 className='text-info'>{item.title}</h4>
+                                            <h5>{item.company}</h5>
+                                            <p>{item.description}</p>
+                                            <p className='text-success'>{item.location}</p>
                                         </section>
+                                    </section>
 
-                                    })}
-                                </div>
+                                })}
                             </div>
                         </div>
-                    </article>
+                    </div>
+                </article>
 
 
-                </div>
             </div>
         </div>
     )

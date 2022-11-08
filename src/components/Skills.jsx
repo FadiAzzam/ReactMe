@@ -71,88 +71,86 @@ const SkillsInProgress = [
 const Skills = () => {
 	return (
 		<div className="">
-			<div className="row">
-				<div className="col-md-12 p-1">
-					<div>
-						<div className="d-flex mb-2">
-							<div className="subTitleBox">
-								<span className="pl-1 pr-1">meine kenntnisse</span>
-							</div>
+			<div className="col-md-12">
+				<div>
+					<div className="d-flex mb-2">
+						<div className="subTitleBox">
+							<span className="pl-1 pr-1">meine kenntnisse</span>
 						</div>
-						<h1 className="font-weight-bold ">
-							Folgende Programmier-, Auszeichnungs- und Skript- sprachen, die ich durch mein Studium und
-							Arbeit erworben habe.
-						</h1>
 					</div>
+					<h1 className="font-weight-bold ">
+						Folgende Programmier-, Auszeichnungs- und Skript- sprachen, die ich durch mein Studium und
+						Arbeit erworben habe.
+					</h1>
+				</div>
 
-					<article className="MosaicLayout">
-						{skills.map((item, i) => {
+				<article className="MosaicLayout">
+					{skills.map((item, i) => {
+						return (
+							<div key={i} className="card">
+								<div className="card-body">
+									<div>
+										<h5 className="card-title">{item.title}</h5>
+										<p className="fw-light">{item.body}</p>
+									</div>
+									<div>
+										{item?.frameworks.map((framework, j) => {
+											return (
+												<React.Fragment key={framework}>
+													<span className="text-info">
+														{framework}
+													</span>
+													{item?.frameworks?.length === j + 1 ? "" : <span>|</span>}
+												</React.Fragment>
+											)
+										})}
+									</div>
+								</div>
+							</div>
+						)
+					})}
+				</article>
+
+
+
+				<article className="MosaicLayout">
+					<div className="card">
+						<div className="card-body">
+							<div className="d-flex mb-2">
+								<div className="subTitleBox">
+									<span className="pl-1 pr-1">skills in progress</span>
+								</div>
+							</div>
+							<h1 className="font-weight-bold ">
+								Checkliste Weiterbildungsziele
+							</h1>
+							<Progress />
+
+						</div>
+						{SkillsInProgress.map((item, i) => {
 							return (
-								<div key={i} className="card">
-									<div className="card-body">
-										<div>
-											<h5 className="card-title">{item.title}</h5>
-											<p className="fw-light">{item.body}</p>
-										</div>
-										<div>
-											{item?.frameworks.map((framework, j) => {
-												return (
-													<React.Fragment key={framework}>
-														<span className="text-info">
-															{framework}
-														</span>
-														{item?.frameworks?.length === j + 1 ? "" : <span>|</span>}
-													</React.Fragment>
-												)
-											})}
-										</div>
+								<div key={i} className="card-body">
+									<div>
+										<h5 className="card-title">{item.title}</h5>
+										<p className="fw-light">{item.body}</p>
+									</div>
+									<div>
+										{item?.frameworks.map((framework, j) => {
+											return (
+												<React.Fragment key={framework}>
+													<span className="text-info">
+														{framework}
+													</span>
+													{item?.frameworks?.length === j + 1 ? "" : <span>|</span>}
+												</React.Fragment>
+											)
+										})}
 									</div>
 								</div>
 							)
 						})}
-					</article>
-
-
-
-					<article className="MosaicLayout">
-						<div className="card">
-							<div className="card-body">
-								<div className="d-flex mb-2">
-									<div className="subTitleBox">
-										<span className="pl-1 pr-1">skills in progress</span>
-									</div>
-								</div>
-								<h1 className="font-weight-bold ">
-									Checkliste Weiterbildungsziele
-								</h1>
-								<Progress />
-
-							</div>
-							{SkillsInProgress.map((item, i) => {
-								return (
-									<div key={i} className="card-body">
-										<div>
-											<h5 className="card-title">{item.title}</h5>
-											<p className="fw-light">{item.body}</p>
-										</div>
-										<div>
-											{item?.frameworks.map((framework, j) => {
-												return (
-													<React.Fragment key={framework}>
-														<span className="text-info">
-															{framework}
-														</span>
-														{item?.frameworks?.length === j + 1 ? "" : <span>|</span>}
-													</React.Fragment>
-												)
-											})}
-										</div>
-									</div>
-								)
-							})}
-						</div>
-					</article>
-				</div>
+					</div>
+				</article>
 			</div>
 		</div>
 	);

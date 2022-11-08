@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='container'>
                 <div className="row my-5">
                     <div className="col-12">
-                        <nav className="m-2 navbar navbar-expand-lg navbar-custom subTitleBox">
+                        <nav className="navbar navbar-expand-lg navbar-custom subTitleBox">
                             <ul className="navbar-nav ms-auto text-right flex-row">
                                 <li className="nav-item m-2">
                                     <Link className="nav-link" to="/">

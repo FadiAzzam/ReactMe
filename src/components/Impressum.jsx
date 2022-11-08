@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Impressum() {
     return (
-        <div className="">
+        <div className="mt-5">
             <div className="card">
                 <div className="card-header">
                     Impressum

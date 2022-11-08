@@ -15,7 +15,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <HashRouter>
-      <div className="App">
+      <div className="App container">
         <Header />
         <Routes>
           <Route path="/" element={<LandingPage />} />

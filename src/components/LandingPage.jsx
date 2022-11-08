@@ -11,7 +11,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const LandingPage = () => {
 	return (
-		<div className="container">
+		<div className="">
 			<div className="">
 				<div className="row h-100 align-items-center">
 					<div className="col-1 text-left">
