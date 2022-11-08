@@ -23,7 +23,7 @@ const About = () => {
 								</div>
 								<div className="col-md-6">
 									<p className="fw-light text-align-justify">
-										Fadi Azzam ist mein Name, komme aus Sweida in Syrien, lebe in Dresden und bin 25
+										Fadi Azzam ist mein Name, komme aus Sweida in Syrien, lebe in Dresden und bin 26
 										Jahre alt, bin kreativ, ein Teamplayer, schnell, belastbar und offen und auch
 										interkulturell flexibel.
 									</p>

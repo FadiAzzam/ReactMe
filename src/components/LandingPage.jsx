@@ -5,6 +5,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import WorkExperience from './WorkExperience'
 import Education from './Education';
+import Hobbys from './Hobbys';
 
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -50,6 +51,8 @@ const LandingPage = () => {
 			<Projects />
 			<WorkExperience />
 			<Education />
+			<Hobbys />
+
 		</div>
 	);
 };

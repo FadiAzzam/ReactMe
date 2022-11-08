@@ -19,7 +19,7 @@ const cv = [
       end: "09.2017"
     }],
     title: 'Praktikum',
-    description: 'Im Geschäftsfeld Genierieren und Drucken, Arbeitsgruppe Bildbearbeitung und Datenmangement.',
+    description: 'Einführungsaufgaben in dem Bereich OOP und Webprogrammierung Im Geschäftsfeld Genierieren und Drucken, Arbeitsgruppe Bildbearbeitung und Datenmangement.',
     company: "Fraunhofer-Institut für Werkstoff- und Strahltechnik IWS",
     location: "Dresden / Deutschland"
   },
@@ -66,7 +66,8 @@ const Education = () => {
               </div>
             </div>
             <h1 className="font-weight-bold ">
-              Bildungsweg
+              Bildungsweg in Deutschland und in meiner Heimat Syrien
+
             </h1>
           </div>
           <article>

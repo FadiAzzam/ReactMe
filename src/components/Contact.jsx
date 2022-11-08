@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
             <div className='card-body'>
               <address>
-                Königstraße 22 01079 Dresden, Deutschland
+                Königstraße 22, 01079 Dresden, Deutschland
               </address>
             </div>
           </div>

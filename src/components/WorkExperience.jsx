@@ -25,9 +25,9 @@ const workExperience = [
       end: "09.2021"
     }],
     title: 'Dualer Student',
-    description: '',
+    description: 'Pro Semester wurde jeweils eine Aufgabe im Form eines Belegs, einer Präsentation oder eines Projekts unterteilt. Die Aufgabenbereiche waren u.a.: Entwicklung von Webseiten (Planung, Konzept, Umsetzung), Designaufgaben (Infografiken und Animationsvideos), Datenbankmanagement und BackendEntwicklung',
     company: "Fraunhofer-Institut für Werkstoff- und Strahltechnik IWS",
-    tasks: [""],
+    tasks: [],
     links: []
 
   },
@@ -46,7 +46,7 @@ const WorkExperience = () => {
               </div>
             </div>
             <h1 className="font-weight-bold ">
-              Praxiserfahrung
+              Praxiserfahrung während der Studienzeit und nach dem Studium
             </h1>
           </div>
           <article>
@@ -65,7 +65,7 @@ const WorkExperience = () => {
                         <h5>{item.company}</h5>
                         <p>{item.description}</p>
                         <ul>
-                          <li><strong>Aufgabenbereiche</strong></li>
+                          {item.tasks.length > 0 && <li><strong>Aufgabenbereiche</strong></li>}
                           {item.tasks.map(task => {
                             return <li key={task}>{task}</li>
                           })}

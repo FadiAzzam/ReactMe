@@ -3,12 +3,12 @@ import Progress from "../components/common/Progress"
 const skills = [
 	{
 		title: 'React js',
-		body: 'Verschiedene Projekte aus Studium und Arbeit mit der Verwendung von:',
+		body: 'Verschiedene Projekte aus dem Studium und der Arbeit mit der Verwendung von:',
 		frameworks: ['Class Components', 'React Hooks', 'JSX']
 	},
 	{
 		title: 'JavaScript',
-		body: 'Verschiedene Projekte aus Studium und Arbeit mit der Verwendung von:',
+		body: 'Verschiedene Projekte aus dem Studium und der Arbeit mit der Verwendung von:',
 		frameworks: ['React', 'Redux', 'JQuery']
 	},
 	{
@@ -19,17 +19,17 @@ const skills = [
 	{
 		title: 'Wordpress',
 		body:
-			'Erstellung von verschiedenen Designvorlagen für Wordpress-Websites und die Designs-Umsetzung in Wordpress-Websites',
+			'Erstellung von verschiedenen Designvorlagen für Wordpress-Websiten.',
 		frameworks: ['Elementor']
 	},
 	{
 		title: 'Adobe XD',
-		body: 'Uni-Projkten, Erstellung von UI/UX einer mobile application und von Nutzerszenarien.',
+		body: 'Uni-Projekten, Erstellung von UI/UX einer mobile application und Nutzerszenarien.',
 		frameworks: ['']
 	},
 	{
 		title: 'Affinity Designer & Photo',
-		body: 'Im Rahmen der Arbeit wurden verschiedenen Grafiken sowohl für Websites als auch für Viedeos erstellt.',
+		body: 'Im Rahmen der Arbeit wurden verschiedenen Grafiken sowohl für Websiten erstellt.',
 		frameworks: ['']
 	},
 	{
@@ -39,7 +39,7 @@ const skills = [
 	},
 	{
 		title: 'Adobe InDesign',
-		body: 'Konzeption von Broschüren und Design-Vorlagen, Design Umsetzung',
+		body: 'Konzeption von Broschüren und Design-Vorlagen.',
 		frameworks: ['']
 	},
 	{
