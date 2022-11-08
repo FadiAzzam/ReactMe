@@ -9,7 +9,7 @@ const About = () => {
 					<div>
 						<div className="d-flex mb-2">
 							<div className="subTitleBox">
-								<span className="pl-1 pr-1">ABOUT ME</span>
+								<span className="pl-1 pr-1">about me</span>
 							</div>
 						</div>
 						<h1 className="font-weight-bold ">Hey, hier möchte ich mich gerne vorstellen!</h1>
@@ -22,12 +22,12 @@ const About = () => {
 									<div className="avatar" />
 								</div>
 								<div className="col-md-6">
-									<p className="fw-light">
+									<p className="fw-light text-align-justify">
 										Fadi Azzam ist mein Name, komme aus Sweida in Syrien, lebe in Dresden und bin 25
 										Jahre alt, bin kreativ, ein Teamplayer, schnell, belastbar und offen und auch
 										interkulturell flexibel.
 									</p>
-									<p className="text-wrap fw-light">
+									<p className="text-wrap fw-light text-align-justify">
 										React js, Aufbau von Webseiten sowie Grafische Gestaltung, das ist weit mehr als
 										ein Beruf für mich. Seit 2016 lebe ich in Deutschland und habe am 09.2021 mein
 										Medieninformatik Bachelor an der
