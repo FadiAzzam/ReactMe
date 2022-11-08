@@ -5,18 +5,30 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="py-5 bg-primary mt-5">
+        <footer className="py-5 mt-5">
             <div className='container'>
                 <div className="row my-5">
-                    <div className="col-3">
-                        <small className="d-block mb-3 text-secondary">master© 2022</small>
-                    </div>
-                    <div className="col-12 col-md">
-                        <h5 className='text-info'>About</h5>
-                        <ul className="list-unstyled text-small">
-                            <li><Link className='dropdown-item text-secondary secondaryHover' to="/contact">Contact</Link></li>
-                            <li><Link className='dropdown-item text-secondary secondaryHover' to="/impressum">Impressum</Link></li>
-                        </ul>
+                    <div className="col-12">
+                        <nav className="m-2 navbar navbar-expand-lg navbar-custom subTitleBox">
+                            <ul className="navbar-nav ms-auto text-right">
+                                <li className="nav-item m-2">
+                                    <Link className="nav-link" to="/">
+                                        fadiazzam.de
+                                    </Link>
+                                </li>
+                                <li className="nav-item m-2">
+                                    <Link className="nav-link" to="/contact">
+                                        Contact
+                                    </Link>
+                                </li>
+
+                                <li className="nav-item m-2">
+                                    <Link className="nav-link" to="/impressum">
+                                        Impressum
+                                    </Link>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

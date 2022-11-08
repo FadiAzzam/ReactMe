@@ -25,7 +25,7 @@ $black:    #000;
 
 $primary:       $blue;
 $secondary:     $gray-400;
-$success:       $green;
+$success:       $teal;
 $info:          $cyan;
 $warning:       $yellow;
 $danger:        $red;
@@ -110,14 +110,23 @@ body{
   }
 }
 
+
+.App{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text,
 .navbar-custom .nav-link {
-    color: var(--master-clr-light)!important;
+    color: var(--master-clr-light);
 }
 
 .navbar-custom .nav-link:hover{
-  color: var(--master-clr-accent)!important;
+  color: var(--master-clr-accent);
 
 }
 
@@ -164,24 +173,28 @@ body{
 
 .hoverBox:hover{
   border-radius: 1rem;
-  background: linear-gradient(
-    40deg,
-    transparent,
-    10%,
-    rgba(255, 255, 255, 0.16) 60%,
-    transparent 100%
-  );  transition: all 200ms;
+  // background: linear-gradient(
+  //   40deg,
+  //   transparent,
+  //   10%,
+  //   rgba(255, 255, 255, 0.16) 60%,
+  //   transparent 100%
+  // );  
+  transition: all 200ms;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 .subTitleBox{
   border-radius: 1rem;
-  background: linear-gradient(
-    40deg,
-    transparent,
-    10%,
-    rgba(255, 255, 255, 0.16) 60%,
-    transparent 100%
-  );
+  // background: linear-gradient(
+  //   40deg,
+  //   transparent,
+  //   10%,
+  //   rgba(255, 255, 255, 0.16) 60%,
+  //   transparent 100%
+  // )
+  background: rgba(0, 0, 0, 0.25);
+
   padding: 0.5rem;
 }
 
@@ -206,13 +219,15 @@ article{
   padding: 10px 0px;
   box-shadow: 2px 2px 0px 0px var(--master-clr-accent);
   
-  background: linear-gradient(
-    40deg,
-    transparent,
-    10%,
-    rgba(255, 255, 255, 0.16) 60%,
-    transparent 100%
-  );
+  // background: linear-gradient(
+  //   40deg,
+  //   transparent,
+  //   10%,
+  //   rgba(255, 255, 255, 0.16) 60%,
+  //   transparent 100%
+  // );
+
+  background: rgb(0 0 0 / 25%);
   backdrop-filter: blur(7px);
   border-radius: 10px;
   border: 1.5px solid rgba(255, 255, 255, 0.08);
@@ -230,8 +245,7 @@ article{
 .progress{
   //border: 10px solid;
   display: flex;
-  gap: 2px;
-  padding: 10px;
+  gap: 1px;
   //height: auto;
   background-color: transparent;
   .tak{
@@ -351,3 +365,51 @@ article{
   height: 50vh;
 }
 
+
+
+
+
+
+.lines{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: -1;
+}
+  
+.line{
+  position: relative;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+    animation: dropDown 7s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  }
+  &:nth-child(1){
+    &::after
+      {animation-delay: 2s}
+    }
+}
+    
+@keyframes dropDown{
+  from { top: -50%}
+  to {top: 110%}
+}

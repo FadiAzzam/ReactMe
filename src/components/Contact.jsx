@@ -2,31 +2,30 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="container py-4 min-vh-100">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-1 p-1"></div>
+        <div className="col-md-10 p-1">
+          <div className='card'>
+            <div className="card-header">
+              Contact
+              <hr />
+            </div>
+            <div className='card-body'>
+              <a href="tel:017647683592" className='link-primary'>017647683592</a>
+            </div>
+            <div className='card-body'>
+              <a href="mailto:fadi.azzam@outlook.de" className='link-primary'>fadi.azzam@outlook.de</a>
+            </div>
+            <div className='card-body'>
+              <address>
+                Königstraße 22 01079 Dresden, Deutschland
+              </address>
+            </div>
+          </div>
 
-    <form id="contactForm">
-
-        <div className="mb-3">
-        <label className="form-label" htmlFor="name">Name</label>
-        <input className="form-control" id="name" type="text" placeholder="Name" />
         </div>
-
-        <div className="mb-3">
-        <label className="form-label" htmlFor="emailAddress">Email Address</label>
-        <input className="form-control" id="emailAddress" type="email" placeholder="Email Address" />
-        </div>
-
-        <div className="mb-3">
-        <label className="form-label" htmlFor="message">Message</label>
-        <textarea className="form-control" id="message" type="text" placeholder="Message" ></textarea>
-        </div>
-
-        <div className="d-grid">
-        <button className="btn btn-primary btn-lg" type="submit">Submit</button>
-        </div>
-
-    </form>
-
+      </div>
     </div>
   )
 }

@@ -9,8 +9,9 @@ const cv = [
       end: "09.2021"
     }],
     title: 'Bachelor of Engineering in Medieninformatik',
-    description: 'Im Rahmen des durch die EU geförderten Projektes sollen innovative Health basierte Schulungsangebote entwickelt und in Form der Konzeption, Organisation, Umsetzung und Planung verschiedener konkreter Projektvorhaben umgesetzt werden.',
+    description: 'Abschlussnote: 2,3',
     company: "BA Dresden | Staatliche Studienakademie Dresden",
+    location: "Dresden / Deutschland"
   },
   {
     date: [{
@@ -20,6 +21,7 @@ const cv = [
     title: 'Praktikum',
     description: 'Im Geschäftsfeld Genierieren und Drucken, Arbeitsgruppe Bildbearbeitung und Datenmangement.',
     company: "Fraunhofer-Institut für Werkstoff- und Strahltechnik IWS",
+    location: "Dresden / Deutschland"
   },
   {
     date: [{
@@ -29,6 +31,7 @@ const cv = [
     title: 'Deutsch Sprachkurse',
     description: '',
     company: "Fremdsprachenschule for everyone",
+    location: "Dresden / Deutschland"
   }, {
     date: [{
       start: "10.2014",
@@ -36,7 +39,8 @@ const cv = [
     }],
     title: 'Studium der Informatik',
     description: '',
-    company: "Technische Fachhochschule für Industrie in Sweida",
+    company: "Technische Fachhochschule für Industrie in Sweida / Syrien",
+    location: "Sweida / Syrien"
   }, {
     date: [{
       start: "10.2011",
@@ -44,7 +48,8 @@ const cv = [
     }],
     title: 'Fachgymnasium',
     description: 'Fachabitur Fachrichtung Computertechnik',
-    company: "Sweida | Nawras Abed Albakie Computertechnik school",
+    company: "Nawras Abed Albakie Computertechnik school Sweida / Syrien",
+    location: "Sweida / Syrien"
   },
 ]
 
@@ -61,7 +66,7 @@ const Education = () => {
               </div>
             </div>
             <h1 className="font-weight-bold ">
-              Lebenslauf
+              Bildungsweg
             </h1>
           </div>
           <article>
@@ -70,7 +75,7 @@ const Education = () => {
               <div className='timeLine'>
                 <div>
                   {cv.map(item => {
-                    return <section class="year">
+                    return <section className="year">
                       <div className='leftSide'>
                         <h6>{item.date[0].end}</h6>
                         <h6>{item.date[0].start}</h6>
@@ -79,6 +84,7 @@ const Education = () => {
                         <h4 className='text-info'>{item.title}</h4>
                         <h5>{item.company}</h5>
                         <p>{item.description}</p>
+                        <p className='text-success'>{item.location}</p>
                       </section>
                     </section>
 

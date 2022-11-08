@@ -114,25 +114,24 @@ const Skills = () => {
 					</article>
 
 
-					<div>
-						<div className="d-flex mb-2">
-							<div className="subTitleBox">
-								<span className="pl-1 pr-1">skills in progress</span>
-							</div>
-						</div>
-						<h1 className="font-weight-bold ">
-							Skills in progress
-						</h1>
-					</div>
-					<Progress />
-					<div>
 
-					</div>
 					<article className="MosaicLayout">
-						{SkillsInProgress.map((item, i) => {
-							return (
-								<div key={i} className="card">
-									<div className="card-body">
+						<div className="card">
+							<div className="card-body">
+								<div className="d-flex mb-2">
+									<div className="subTitleBox">
+										<span className="pl-1 pr-1">skills in progress</span>
+									</div>
+								</div>
+								<h1 className="font-weight-bold ">
+									Checkliste Weiterbildungsziele
+								</h1>
+								<Progress />
+
+							</div>
+							{SkillsInProgress.map((item, i) => {
+								return (
+									<div key={i} className="card-body">
 										<div>
 											<h5 className="card-title">{item.title}</h5>
 											<p className="fw-light">{item.body}</p>
@@ -150,9 +149,9 @@ const Skills = () => {
 											})}
 										</div>
 									</div>
-								</div>
-							)
-						})}
+								)
+							})}
+						</div>
 					</article>
 				</div>
 			</div>

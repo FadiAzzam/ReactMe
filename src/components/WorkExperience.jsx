@@ -54,8 +54,8 @@ const WorkExperience = () => {
             <div className='timeLineContainer'>
               <div className='timeLine'>
                 <div>
-                  {workExperience.map(item => {
-                    return <section class="year">
+                  {workExperience.map((item, i) => {
+                    return <section key={i} className="year">
                       <div className='leftSide'>
                         <h6>{item.date[0].end}</h6>
                         <h6>{item.date[0].start}</h6>
@@ -67,12 +67,11 @@ const WorkExperience = () => {
                         <ul>
                           <li><strong>Aufgabenbereiche</strong></li>
                           {item.tasks.map(task => {
-                            return <li>{task}</li>
+                            return <li key={task}>{task}</li>
                           })}
                         </ul>
                       </section>
                     </section>
-
                   })}
                 </div>
               </div>
