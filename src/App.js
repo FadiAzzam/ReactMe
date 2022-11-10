@@ -8,9 +8,6 @@ import Footer from "./components/Footer";
 import Impressum from "./components/Impressum";
 
 
-
-import { BrowserRouter as Router } from "react-router-dom";
-
 import { HashRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (

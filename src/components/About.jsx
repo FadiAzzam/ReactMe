@@ -17,7 +17,7 @@ const About = () => {
 					<section className="d-inline-block">
 						<div className="row align-items-center">
 							<div className="col-md-6 col-sm-12 d-flex justify-content-center p-3">
-								<div className="avatar" />
+								<div className="avatar" title="Bild von Fadi Azzam"></div>
 							</div>
 							<div className="col-md-6">
 								<p className="fw-light text-align-justify">
