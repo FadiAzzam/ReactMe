@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/"
+    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <circle cx="8" cy="8" r="8" style="fill:rgb(102,0,255);" />
+    <use xlink:href="#_Image1" x="4.215" y="3.332" width="8.64px" height="10.32px"
+        transform="matrix(0.960018,0,0,0.938197,0,0)" />
+    <g transform="matrix(1,0,0,1,-0.711602,-0.728)">
+        <text x="5px" y="13px" style="font-family:'Didot';font-size:12px;fill:white;">F</text>
+    </g>
+    <defs>
+        <image id="_Image1" width="9px" height="11px"
+            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAALCAYAAACtWacbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAg0lEQVQYlU3Qyw7CMAxE0dMSBKz4///kGdqGzVjKwpJtjW9msuCMawp+2HGquWHBBXcMPPCN6ITRom4T6YOOI/OxplkibHm+jjt6iWbhBbf0B/aZtGCdiGs8HjNp5PIX4z0pR6UbqS3GnxFuczqhFKnPCUu04RVafWbRtSzetUi/T7M/djkyzbcw0M8AAAAASUVORK5CYII=" />
+    </defs>
+</svg>
